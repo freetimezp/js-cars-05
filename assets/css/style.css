@@ -83,3 +83,78 @@ header .menu.active {
 }
 
 /* header end */
+
+/* nav start */
+.nav {
+    position: absolute;
+    right: 100px;
+    top: 0;
+    width: 30%;
+    height: 5px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, transparent, var(--primary), var(--primary)) 30;
+    background: transparent;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+    z-index: 200;
+}
+
+.nav.active {
+    top: 100px;
+    width: 40%;
+    height: 100px;
+    border-top: 5px solid;
+    border-bottom: none;
+    border-image: linear-gradient(90deg, transparent, var(--primary), var(--primary), transparent) 30;
+}
+
+.nav li {
+    position: relative;
+    list-style: none;
+    transform: translateY(-100px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.nav.active li {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav li a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.nav li a:hover {
+    box-shadow: 0 0 20px rgba(0, 194, 222, 0.5);
+}
+
+/* nav end */
+
+
+
+
+
+
+
+
+
+
+
