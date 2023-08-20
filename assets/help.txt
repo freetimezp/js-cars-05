@@ -2,3 +2,4 @@ https://www.youtube.com/watch?v=mlQbYMrhul0&t=600s
 https://fonts.google.com/
 https://materializecss.com/
 https://releases.jquery.com/
+https://www.bootstrapcdn.com/bootstrapicons/
