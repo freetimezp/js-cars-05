@@ -436,9 +436,36 @@ header .menu.active {
 /* social end */
 
 
+/* play close btn start */
+.banner .play,
+.banner .pause {
+    display: none;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    font-size: 8em;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
 
+.banner .play:hover,
+.banner .pause:hover {
+    color: #fff;
+    opacity: 1;
+}
 
+.banner .play.active {
+    display: block;
+}
 
+.banner .pause.active {
+    display: block;
+}
+
+/* play close btn end */
 
 
 

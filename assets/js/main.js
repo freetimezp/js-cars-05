@@ -37,3 +37,41 @@ function changeVideo(name) {
         }
     })
 }
+
+//video play, pause
+function togglePlay() {
+    const play = document.querySelector('.play');
+    const pause = document.querySelector('.pause');
+
+    play.classList.toggle('active');
+    pause.classList.toggle('active');
+}
+
+function pauseVideo() {
+    const bgVideoList = document.querySelectorAll('.bg-video');
+    bgVideoList.forEach(video => {
+        video.pause();
+    })
+
+    togglePlay();
+}
+
+function playVideo() {
+    const bgVideoList = document.querySelectorAll('.bg-video');
+    bgVideoList.forEach(video => {
+        video.play();
+    })
+
+    togglePlay();
+}
+
+
+
+
+
+
+
+
+
+
+
